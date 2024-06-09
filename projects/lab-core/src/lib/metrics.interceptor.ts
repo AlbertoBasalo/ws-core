@@ -25,7 +25,7 @@ export const metricsInterceptor: HttpInterceptorFn = (req, next) => {
     filter((event) => event.type === HttpEventType.Response),
     tap(() => {
       const elapsed = Date.now() - start;
-      const message = `${req.method} request for ${req.url} took ${elapsed} ms.`;
+      const message = `${req.method} ${req.url} took ${elapsed} ms.`;
       logger.log(message, 'DEBUG');
     })
   );
