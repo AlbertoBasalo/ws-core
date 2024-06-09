@@ -3,5 +3,41 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
+    "lab-core": {
+      "projectType": "library",
+      "root": "projects/lab-core",
+      "sourceRoot": "projects/lab-core/src",
+      "prefix": "lab-core",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/lab-core/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/lab-core/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/lab-core/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "tsConfig": "projects/lab-core/tsconfig.spec.json",
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "cli": {
+    "analytics": false
   }
 }

@@ -2,6 +2,38 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.1.
 
+```bash
+ng new ws-core --no-create-application
+cd ws-core
+ng g lib lab-core --prefix=lab-core
+ng g s logger
+```
+
+### Development and testing
+
+```bash
+# "watch": "ng build lab-core --watch --configuration development",
+npm run watch
+# "test": "ng test lab-core"
+npm test
+```
+
+### Build and publish
+
+```bash
+# "publish": "npm run build && cd dist/lab-core && npm link",
+npm run publish
+# list global npm links
+npm ls -g --depth=0
+# target the global npm link
+cd ..
+ng new lab-target --minimal
+cd lab-target
+npm link lab-core
+# build.options: preserveSymlinks: true
+npm start
+```
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
