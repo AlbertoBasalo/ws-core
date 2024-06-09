@@ -1,5 +1,12 @@
 # WsCore
 
+```bash
+git clone https://github.com/AlbertoBasalo/ws-core.git
+cd ws-core
+npm install
+npm start
+```
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.1.
 
 ```bash
