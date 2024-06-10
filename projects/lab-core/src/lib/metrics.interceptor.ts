@@ -1,6 +1,6 @@
 import { HttpEventType, HttpInterceptorFn } from '@angular/common/http';
 import { inject } from '@angular/core';
-import { LoggerService } from 'lab-srv';
+import { LoggerService } from '@lab/srv';
 import { filter, tap } from 'rxjs';
 
 /**

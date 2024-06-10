@@ -4,6 +4,7 @@
   "description": "A library with Angular services and utilities for the Lab project.",
   "scripts": {
     "ng": "ng",
+    "link": "npm link @lab/srv ",
     "build": "ng build --configuration production",
     "watch": "ng build --watch --configuration development",
     "test": "ng test ",

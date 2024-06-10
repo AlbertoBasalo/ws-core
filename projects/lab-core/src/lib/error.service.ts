@@ -5,7 +5,7 @@ import {
   inject,
   makeEnvironmentProviders,
 } from '@angular/core';
-import { LogLevel, LoggerService } from 'lab-srv';
+import { LogLevel, LoggerService } from '@lab/srv';
 /**
  * Service to handle errors and show notifications.
  * @description Must be provided as the ErrorHandler in the app config function.

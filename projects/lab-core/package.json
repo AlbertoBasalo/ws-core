@@ -1,5 +1,5 @@
 {
-  "name": "lab-core",
+  "name": "@lab/core",
   "version": "0.0.3",
   "peerDependencies": {
     "@angular/common": "^18.0.0",
