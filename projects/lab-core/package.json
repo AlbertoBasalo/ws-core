@@ -1,5 +1,6 @@
 {
   "name": "@lab/core",
+  "description": "A library with Angular utilities for the Lab project.",
   "version": "0.0.5",
   "scripts": {
     "release": "standard-version"
